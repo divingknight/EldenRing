@@ -1,65 +1,81 @@
-import Image from "next/image";
+import Link from "next/link";
+import { GuideCard } from "@/components/GuideCard";
+import { guideCategories, SITE_NAME } from "@/lib/guides";
+import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 
 export default function Home() {
+  const latestUpdates = [
+    {
+      title: "How to Beat Heolstor — Full Boss Guide",
+      href: "/guides/bosses/heolstor",
+      category: "Boss Guides",
+    },
+    {
+      title: "Best Builds for All 10 Nightfarers — Updated for Patch 1.03",
+      href: "/guides/builds",
+      category: "Builds",
+    },
+    {
+      title: "Day 1 Optimal Routes — Maximize Your Rune Income",
+      href: "/guides/walkthrough",
+      category: "Walkthrough",
+    },
+    {
+      title: "Top 10 Relics Tier List — Every Character Ranked",
+      href: "/guides/items",
+      category: "Items & Relics",
+    },
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="max-w-7xl mx-auto px-4 py-12">
+      {/* Hero */}
+      <section className="text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Welcome to <span className="text-primary">{SITE_NAME}</span>
+        </h1>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Your definitive guide to Elden Ring: Nightreign — the co-op roguelike
+          experience set in the Lands Between. Master every Nightfarer, conquer
+          every boss, and survive the deadly three-day cycle.
+        </p>
+      </section>
+
+      {/* Featured Video */}
+      <section className="mb-16 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-6 text-center">Featured Video</h2>
+        <YouTubeEmbed
+          videoId="XxUk0H31kiE"
+          title="Elden Ring Nightreign Ultimate Starter Guide"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+      </section>
+
+      {/* Guide Categories Grid */}
+      <section>
+        <h2 className="text-2xl font-bold mb-8 text-center">Explore Our Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {guideCategories.map((guide) => (
+            <GuideCard key={guide.slug} guide={guide} />
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Latest Updates */}
+      <section className="mt-16">
+        <h2 className="text-2xl font-bold mb-6">Latest Updates</h2>
+        <div className="space-y-4">
+          {latestUpdates.map((update, i) => (
+            <Link key={i} href={update.href} className="block">
+              <div className="flex items-center justify-between p-4 rounded-lg border border-border bg-card hover:bg-card-hover transition-colors">
+                <div>
+                  <h3 className="font-medium text-foreground">{update.title}</h3>
+                  <span className="text-xs text-muted-foreground">{update.category}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-      </main>
+      </section>
     </div>
   );
 }
