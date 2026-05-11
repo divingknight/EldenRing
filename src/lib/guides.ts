@@ -8,7 +8,7 @@ export interface GuideCategory {
 
 export const SITE_NAME = "Nightreign Guide";
 export const SITE_DESCRIPTION = "Your ultimate Elden Ring: Nightreign guide — Nightfarer builds, boss strategies, relic tier lists, and tips to conquer every Nightlord.";
-export const SITE_URL = "https://yourdomain.com";
+export const SITE_URL = "https://nightreign.club";
 
 export const guideCategories: GuideCategory[] = [
   {
