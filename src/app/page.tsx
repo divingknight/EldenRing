@@ -6,6 +6,11 @@ import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 export default function Home() {
   const latestUpdates = [
     {
+      title: "How to Get Legendary Weapons Fast — Farming Guide",
+      href: "/guides/items/legendary-weapons",
+      category: "Items & Relics",
+    },
+    {
       title: "How to Beat Heolstor — Full Boss Guide",
       href: "/guides/bosses/heolstor",
       category: "Boss Guides",

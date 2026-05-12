@@ -9,6 +9,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const subPages = [
+    { path: "/guides/bosses/heolstor", priority: 0.9 },
+    { path: "/guides/items/legendary-weapons", priority: 0.9 },
+  ].map((page) => ({
+    url: `${SITE_URL}${page.path}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: page.priority,
+  }));
+
   return [
     {
       url: SITE_URL,
@@ -17,5 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     ...guidePages,
+    ...subPages,
   ];
 }

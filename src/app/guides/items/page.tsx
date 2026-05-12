@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 import { TipBox } from "@/components/article/TipBox";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -291,6 +292,15 @@ export default function ItemsPage() {
           early game. Always upgrade at every opportunity &mdash; a +3
           common weapon outperforms a +0 rare weapon.
         </TipBox>
+
+        <div className="my-6">
+          <Link
+            href="/guides/items/legendary-weapons"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          >
+            Legendary Weapons Farming Guide &rarr;
+          </Link>
+        </div>
 
         {/* ── Flask Charges ── */}
         <h2>Flask Charges &amp; Churches of Marika</h2>
