@@ -49,6 +49,17 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYSYK124H2" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-SYSYK124H2');
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
