@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const subPages = [
     { path: "/guides/bosses/heolstor", priority: 0.9 },
     { path: "/guides/items/legendary-weapons", priority: 0.9 },
+    { path: "/guides/builds/tier-list", priority: 0.9 },
   ].map((page) => ({
     url: `${SITE_URL}${page.path}`,
     lastModified: new Date(),

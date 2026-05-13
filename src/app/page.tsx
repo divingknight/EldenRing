@@ -6,6 +6,11 @@ import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 export default function Home() {
   const latestUpdates = [
     {
+      title: "Best Nightfarer Tier List & Who to Pick — All 8 Ranked",
+      href: "/guides/builds/tier-list",
+      category: "Builds",
+    },
+    {
       title: "How to Get Legendary Weapons Fast — Farming Guide",
       href: "/guides/items/legendary-weapons",
       category: "Items & Relics",

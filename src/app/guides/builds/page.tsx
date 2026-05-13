@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 import { TipBox } from "@/components/article/TipBox";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -60,7 +61,11 @@ export default function BuildsPage() {
         <p>
           This tier list ranks every Nightfarer based on overall effectiveness
           in co-op and solo play, factoring in consistency across randomized
-          runs.
+          runs. For a deeper breakdown with scores, community debates, and
+          mode-specific rankings, see our{" "}
+          <Link href="/guides/builds/tier-list" className="text-primary hover:underline">
+            full Nightfarer Tier List
+          </Link>.
         </p>
         <table>
           <thead>
