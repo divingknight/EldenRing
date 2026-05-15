@@ -53,8 +53,8 @@ export default function LegendaryWeaponsPage() {
       <div className="guide-content">
         {/* ── Video ── */}
         <YouTubeEmbed
-          videoId="-l6QR5b2weM"
-          title="Best Weapons & How to Get Them — Elden Ring Nightreign"
+          videoId="oBK-biCcIek"
+          title="Fastest Way to Get Legendary Weapons — Elden Ring Nightreign"
         />
 
         {/* ── TL;DR ── */}
@@ -149,6 +149,13 @@ export default function LegendaryWeaponsPage() {
           </strong>{" "}
           This means stacking Item Discovery is multiplicatively more
           effective the higher your base rarity target is.
+        </p>
+        <p>
+          Each legendary weapon has <strong>two passive effects</strong>:
+          one fixed passive unique to the weapon, and one random passive
+          that changes each time you find it. This means the same legendary
+          weapon can vary significantly between runs, adding another layer
+          of RNG to weapon farming.
         </p>
 
         <TipBox type="tip" title="Critical Knowledge">
@@ -516,6 +523,17 @@ export default function LegendaryWeaponsPage() {
               </td>
             </tr>
             <tr>
+              <td>S</td>
+              <td>Marais Executioner&apos;s Sword</td>
+              <td>Greatsword</td>
+              <td>Wylder, Raider</td>
+              <td>
+                Unique passive: +0.8% permanent damage per kill. Stacks
+                infinitely across the entire run, becoming the strongest
+                weapon in extended expeditions.
+              </td>
+            </tr>
+            <tr>
               <td>A</td>
               <td>Dark Moon Blade</td>
               <td>Katana</td>
@@ -567,6 +585,34 @@ export default function LegendaryWeaponsPage() {
             </tr>
           </tbody>
         </table>
+
+        <div className="bg-card border border-primary/30 rounded-xl p-5 my-6">
+          <h3 className="text-lg font-semibold mb-3">
+            Spotlight: Marais Executioner&apos;s Sword
+          </h3>
+          <p className="text-sm text-muted-foreground mb-3">
+            The most unique legendary weapon in Nightreign. Every kill
+            permanently adds <strong className="text-foreground">+0.8% damage</strong> to
+            the weapon, with no cap. By Day 3, if you&apos;ve been farming
+            aggressively, this sword can have 50&ndash;100+ stacks, making it
+            deal significantly more damage than any other weapon in the game.
+          </p>
+          <ul className="text-sm text-muted-foreground space-y-1">
+            <li>
+              <strong className="text-foreground">Best Strategy:</strong>{" "}
+              Find it on Day 1 and never switch. Every kill counts.
+            </li>
+            <li>
+              <strong className="text-foreground">Stack Count:</strong>{" "}
+              ~60 kills on Day 1, ~80 on Day 2, ~30 on Day 3 = ~170 stacks
+              = +136% damage by the Nightlord fight.
+            </li>
+            <li>
+              <strong className="text-foreground">Best Nightfarer:</strong>{" "}
+              Wylder (fast clear speed) or Raider (Strength scaling).
+            </li>
+          </ul>
+        </div>
 
         {/* ── Farming Efficiency ── */}
         <h2>Farming Efficiency Comparison</h2>

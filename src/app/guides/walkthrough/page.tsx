@@ -52,7 +52,7 @@ export default function WalkthroughPage() {
         />
 
         {/* ── Day 1 ── */}
-        <h2>Day 1: Exploration &amp; Foundation (Level 1 &rarr; 5)</h2>
+        <h2>Day 1: Exploration &amp; Foundation (Level 1 &rarr; 6-8)</h2>
         <ul>
           <li>
             <strong>Priority:</strong> Explore as much of the map as possible
@@ -91,7 +91,7 @@ export default function WalkthroughPage() {
         </TipBox>
 
         {/* ── Day 2 ── */}
-        <h2>Day 2: Power Spike (Level 5 &rarr; 10)</h2>
+        <h2>Day 2: Power Spike (Level 6 &rarr; 11-14)</h2>
         <ul>
           <li>
             <strong>The map resets</strong> &mdash; you can explore the same
@@ -99,7 +99,7 @@ export default function WalkthroughPage() {
             revisit high-value locations.
           </li>
           <li>
-            <strong>Focus on leveling up to 10+</strong> at Sites of Grace.
+            <strong>Focus on leveling up to 11+</strong> at Sites of Grace.
             This is your biggest power spike and directly increases your
             survivability on Day 3.
           </li>
@@ -131,7 +131,7 @@ export default function WalkthroughPage() {
         </TipBox>
 
         {/* ── Day 3 ── */}
-        <h2>Day 3: The Final Confrontation (Level 10 &rarr; 14)</h2>
+        <h2>Day 3: The Final Confrontation (Level 11 &rarr; 14)</h2>
         <ul>
           <li>
             <strong>Spend early Day 3 farming remaining runes</strong> to hit
@@ -154,7 +154,7 @@ export default function WalkthroughPage() {
           </li>
           <li>
             <strong>The Nightlord has 2 health bars (4 phases).</strong> See our{" "}
-            <a href="/bosses" className="text-primary hover:underline">
+            <a href="/guides/bosses" className="text-primary hover:underline">
               Boss Guides
             </a>{" "}
             for detailed breakdowns of each Nightlord&apos;s moveset and
@@ -183,13 +183,13 @@ export default function WalkthroughPage() {
             <tr>
               <td>1</td>
               <td>Explore + Loot</td>
-              <td>5</td>
+              <td>6-8</td>
               <td>First weapon, 1&ndash;2 relics, 1 Church</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Level + Gear</td>
-              <td>10</td>
+              <td>11-14</td>
               <td>Holy weapon, 3+ relics, 2&ndash;3 Churches</td>
             </tr>
             <tr>
@@ -268,6 +268,40 @@ export default function WalkthroughPage() {
           having teammates to revive you and share aggro makes the Nightlord
           fight far more forgiving while you learn the mechanics.
         </p>
+
+        {/* ── Movement & Spiritsprings ── */}
+        <h2>Movement Tips &amp; Spiritsprings</h2>
+        <p>
+          The Limveld is a highly vertical map with many elevation changes.
+          <strong>Spiritsprings</strong> (marked as blue cracks on the map)
+          are the fastest movement option available &mdash; they launch you
+          high into the air and let you cover massive distances. Learn their
+          locations early.
+        </p>
+        <ul>
+          <li>
+            <strong>Spiritsprings are faster than sprinting.</strong> Use
+            them to cross between zones quickly, especially when the Limveld
+            is shrinking.
+          </li>
+          <li>
+            <strong>The map is extremely vertical.</strong> Look up and
+            down, not just horizontally. Many chests and Churches of Marika
+            are hidden on elevated platforms or in caves below ground level.
+          </li>
+          <li>
+            <strong>Fall damage exists but is forgiving.</strong> You can
+            survive most falls, but landing from extreme heights will take
+            a significant chunk of HP. Use Spiritsprings for controlled
+            descent.
+          </li>
+        </ul>
+
+        <TipBox type="tip" title="Speed Tip">
+          Memorize Spiritspring locations on Day 1. On Day 2, you can use
+          them to rush directly to Field Bosses, Churches, and high-value
+          loot zones without wasting time running across the map.
+        </TipBox>
 
         {/* ── Video 2 ── */}
         <YouTubeEmbed

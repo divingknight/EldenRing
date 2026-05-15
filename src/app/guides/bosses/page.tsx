@@ -2,13 +2,14 @@ import { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 import { TipBox } from "@/components/article/TipBox";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
     "Elden Ring Nightreign Boss Guides — All Nightlords & Mini-Boss Strategies",
   description:
-    "Complete boss guide for Elden Ring Nightreign. Strategies, weaknesses, and attack patterns for all 5 Nightlords (Tricephalos, Maris, Gnoster, Caligo, Heolstor) and Day 1-2 mini-bosses.",
+    "Complete boss guide for Elden Ring Nightreign. Strategies, weaknesses, and attack patterns for all Nightlords (Tricephalos, Maris, Gnoster, Caligo, Heolstor) and Day 1-2 mini-bosses.",
 };
 
 export default function BossesPage() {
@@ -47,8 +48,8 @@ export default function BossesPage() {
 
         {/* ── Video ── */}
         <YouTubeEmbed
-          videoId="6Wb0F5AGI_k"
-          title="How to Beat EVERY Boss in Elden Ring Nightreign"
+          videoId="zZG8vTq_knQ"
+          title="Actually Useful Tips for Every Field Boss — Elden Ring Nightreign"
         />
 
         {/* ── Nightlord Overview ── */}
@@ -153,6 +154,9 @@ export default function BossesPage() {
 
         {/* ── Maris ── */}
         <h2>Maris (Augur) — The Tidal Sorcerer</h2>
+        <div className="my-4 rounded-xl overflow-hidden border border-border">
+          <Image src="/images/guides/bosses/maris.jpg" alt="Maris (Augur) — The Tidal Sorcerer" width={800} height={450} className="w-full h-auto" />
+        </div>
         <p>
           A water-based humanoid boss that combines melee staff strikes with
           devastating tidal wave magic. Maris is highly mobile and
@@ -196,6 +200,9 @@ export default function BossesPage() {
 
         {/* ── Gnoster ── */}
         <h2>Gnoster (Sentient Pest) — The Insect Swarm</h2>
+        <div className="my-4 rounded-xl overflow-hidden border border-border">
+          <Image src="/images/guides/bosses/gnoster.jpg" alt="Gnoster (Sentient Pest) — The Insect Swarm" width={800} height={450} className="w-full h-auto" />
+        </div>
         <p>
           A fast, erratic insect boss that&apos;s widely considered the most
           annoying Nightlord. Gnoster moves constantly, rarely giving you
@@ -239,6 +246,9 @@ export default function BossesPage() {
 
         {/* ── Caligo ── */}
         <h2>Caligo (Fissure in Fog) — The Fog Walker</h2>
+        <div className="my-4 rounded-xl overflow-hidden border border-border">
+          <Image src="/images/guides/bosses/caligo.jpg" alt="Caligo (Fissure in Fog) — The Fog Walker" width={800} height={450} className="w-full h-auto" />
+        </div>
         <p>
           A terrifying boss that uses fog and darkness to obscure the arena.
           Caligo&apos;s attacks are individually avoidable but the reduced
@@ -373,6 +383,33 @@ export default function BossesPage() {
               <td>
                 Heavy-hitting mounted boss. Bait the charge attack, dodge
                 sideways, punish during recovery.
+              </td>
+            </tr>
+            <tr>
+              <td>Great Red Bear</td>
+              <td>1&ndash;2</td>
+              <td>Medium</td>
+              <td>
+                Large bear that charges and swipes. Keep distance, attack
+                after lunges.
+              </td>
+            </tr>
+            <tr>
+              <td>Cleanrot Knights</td>
+              <td>2</td>
+              <td>Medium</td>
+              <td>
+                Dual knights &mdash; focus one at a time. Holy damage is
+                effective.
+              </td>
+            </tr>
+            <tr>
+              <td>Putrid Avatar</td>
+              <td>2</td>
+              <td>High</td>
+              <td>
+                Corrupted tree guardian. Stay behind, dodge the rot slam.
+                Fire is very effective.
               </td>
             </tr>
           </tbody>

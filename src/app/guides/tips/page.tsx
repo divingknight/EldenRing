@@ -30,8 +30,8 @@ export default function TipsPage() {
       <div className="guide-content">
         {/* ── Video ── */}
         <YouTubeEmbed
-          videoId="JOv-IorXCcY"
-          title="Pro Tips You NEED to Know — Elden Ring Nightreign"
+          videoId="IJ5t5S9sVFc"
+          title="38 Advanced Tips I Wish I Knew SOONER — Elden Ring Nightreign"
         />
 
         {/* ── Combat Tips ── */}
@@ -71,6 +71,25 @@ export default function TipsPage() {
             large beasts like Tricephalos, unlocked camera gives better
             spatial awareness.
           </li>
+          <li>
+            <strong>Ironeye&apos;s Marking has a hidden damage threshold.</strong>{" "}
+            The mark isn&apos;t just a debuff &mdash; when teammates deal enough
+            accumulated damage to a marked target, it triggers a massive burst
+            of bonus damage plus a guaranteed stagger. Coordinate burst damage
+            on marked enemies.
+          </li>
+          <li>
+            <strong>Dual-wielding same weapon types doubles your output.</strong>{" "}
+            When you equip two weapons of the same category (e.g., two katanas),
+            your left-hand attacks swing both weapons simultaneously. This
+            effectively doubles your hit count and status buildup.
+          </li>
+          <li>
+            <strong>Use your character skill on cooldown.</strong>{" "}
+            Nightfarer skills have very short cooldowns compared to other
+            action RPGs. Don&apos;t save them &mdash; use them constantly
+            during combat for maximum DPS and utility.
+          </li>
         </ul>
 
         {/* ── Exploration Tips ── */}
@@ -102,6 +121,18 @@ export default function TipsPage() {
             <strong>Prioritize Sites of Grace near the center.</strong>{" "}
             As the Limveld shrinks, central Sites of Grace become your
             only leveling spots. Don&apos;t rely on outer ones.
+          </li>
+          <li>
+            <strong>Spiritsprings are the fastest travel method.</strong>{" "}
+            Marked as blue cracks on the map, Spiritsprings launch you into
+            the air and cover huge distances. Memorize their locations on
+            Day 1 and use them to speed-run Day 2.
+          </li>
+          <li>
+            <strong>The map is extremely vertical.</strong> Don&apos;t just
+            explore horizontally. Look up for elevated platforms and down for
+            cave entrances. Many high-value chests and Churches are hidden
+            on different elevation levels.
           </li>
         </ul>
 
@@ -279,6 +310,12 @@ export default function TipsPage() {
             discovery. It increases your chance of getting rare weapon
             drops.
           </li>
+          <li>
+            <strong>All equipment passives are global.</strong> Weapon passives
+            apply from ALL equipment slots, not just your active weapon. This
+            means carrying a weapon with a useful passive (like +Item Discovery
+            or +HP on kill) benefits you even if you never swing it.
+          </li>
         </ul>
 
         <TipBox type="info" title="Meta-Progression">
@@ -324,6 +361,21 @@ export default function TipsPage() {
             your skill.
           </li>
         </ul>
+
+        {/* ── Video Guides ── */}
+        <h2>Recommended Video Guides</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <YouTubeEmbed
+            videoId="9UZNe-AnHtE"
+            title="Pro Tips and Tricks You NEED to Know — Elden Ring Nightreign"
+            caption="Essential advanced tips from veteran players. Covers combat, routing, and hidden mechanics."
+          />
+          <YouTubeEmbed
+            videoId="zZG8vTq_knQ"
+            title="Actually Useful Tips for Every Field Boss — Elden Ring Nightreign"
+            caption="Specific strategies for each Field Boss encounter, including optimal positioning and dodge timings."
+          />
+        </div>
 
         {/* ── Leveling Targets ── */}
         <h2>Leveling Targets by Day</h2>

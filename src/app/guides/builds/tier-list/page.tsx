@@ -3,12 +3,13 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { YouTubeEmbed } from "@/components/article/YouTubeEmbed";
 import { TipBox } from "@/components/article/TipBox";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title:
-    "Best Nightfarer Tier List & Who to Pick in Elden Ring Nightreign (2025)",
+    "Best Nightfarer Tier List & Who to Pick in Elden Ring Nightreign (2026)",
   description:
-    "Definitive Nightfarer tier list for Elden Ring Nightreign. Ranking all 8 characters — Guardian, Ironeye, Wylder, Executor, Duchess, Raider, Recluse & Revenant — for solo, co-op, and speedrun. Updated for Patch 1.03.",
+    "Definitive Nightfarer tier list for Elden Ring Nightreign. Ranking all 10 Nightfarers — Guardian, Ironeye, Wylder, Executor, Duchess, Raider, Recluse, Revenant, Undertaker & Scholar — for solo, co-op, and speedrun. Updated for Patch 1.04.",
   keywords: [
     "Elden Ring Nightreign",
     "Nightfarer tier list",
@@ -48,9 +49,9 @@ export default function TierListPage() {
           </h1>
         </div>
         <p className="text-muted-foreground text-lg">
-          All 8 Nightfarers ranked for solo, co-op, and speedrun &mdash; with
+          All 10 Nightfarers ranked for solo, co-op, and speedrun &mdash; with
           detailed breakdowns on why Ironeye, Wylder, and Undertaker are the
-          most debated picks in the community. Updated for Patch 1.03.
+          most debated picks in the community. Updated for Patch 1.04.
         </p>
       </header>
 
@@ -111,7 +112,7 @@ export default function TierListPage() {
         </table>
 
         {/* ── Full Tier List ── */}
-        <h2>Full Nightfarer Tier List (Patch 1.03)</h2>
+        <h2>Full Nightfarer Tier List (Patch 1.04)</h2>
 
         {/* S Tier */}
         <h3>S Tier &mdash; Always Pick These</h3>
@@ -202,6 +203,18 @@ export default function TierListPage() {
               <td>Revenant</td>
               <td>Summoner</td>
               <td>7.0 / 10</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Undertaker</td>
+              <td>Risk DPS</td>
+              <td>6.8 / 10</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Scholar</td>
+              <td>Hybrid Support</td>
+              <td>6.5 / 10</td>
             </tr>
           </tbody>
         </table>
@@ -566,6 +579,78 @@ export default function TierListPage() {
           </li>
         </ul>
 
+        <h2>#9 Undertaker &mdash; The Risk-Reward Gambler (B Tier)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Consistency</td><td>5 / 10</td></tr>
+            <tr><td>Boss DPS</td><td>8 / 10</td></tr>
+            <tr><td>Survivability</td><td>5 / 10</td></tr>
+            <tr><td>Team Value</td><td>6 / 10</td></tr>
+          </tbody>
+        </table>
+        <p>
+          Undertaker is the ultimate high-risk, high-reward Nightfarer.
+          His <strong>Grave Oath</strong> passive increases damage output
+          the lower your HP &mdash; intentionally staying at low health
+          makes you a glass cannon that can outdamage even Executor.
+        </p>
+        <ul>
+          <li>
+            <strong>Grave Oath</strong> damage scaling is exponential below
+            30% HP. At 10% HP, your attacks deal roughly 2x normal damage.
+          </li>
+          <li>
+            Extremely punishing to play. One hit at low HP and you&apos;re
+            dead. No safety net, no second chances.
+          </li>
+          <li>
+            The community believes Undertaker has untapped potential. If a
+            broken relic interaction is discovered, he could jump to A Tier
+            overnight.
+          </li>
+        </ul>
+
+        <h2>#10 Scholar &mdash; The Hybrid Experimenter (B Tier)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Consistency</td><td>6 / 10</td></tr>
+            <tr><td>Boss DPS</td><td>6 / 10</td></tr>
+            <tr><td>Survivability</td><td>7 / 10</td></tr>
+            <tr><td>Team Value</td><td>7 / 10</td></tr>
+          </tbody>
+        </table>
+        <p>
+          Scholar is a hybrid support Nightfarer that blends melee combat
+          with buffing capabilities. His toolkit is versatile but lacks the
+          focused strength of specialist characters.
+        </p>
+        <ul>
+          <li>
+            Can buff teammates with temporary stat boosts, making Scholar
+            valuable in organized co-op teams.
+          </li>
+          <li>
+            Jack-of-all-trades, master of none. Other characters do each
+            individual role better.
+          </li>
+          <li>
+            Best suited for players who enjoy a flexible, adaptive playstyle
+            that changes based on what relics and weapons they find each run.
+          </li>
+        </ul>
+
         {/* ── Context-Based Tier Lists ── */}
         <h2>Tier List by Game Mode</h2>
         <p>
@@ -595,12 +680,12 @@ export default function TierListPage() {
             </tr>
             <tr>
               <td>B</td>
-              <td>Duchess, Raider</td>
+              <td>Duchess, Raider, Scholar</td>
               <td>Confluence is wasted solo. Raider is fine but nothing special.</td>
             </tr>
             <tr>
               <td>C</td>
-              <td>Recluse, Revenant</td>
+              <td>Recluse, Revenant, Undertaker</td>
               <td>Too relic-dependent and squishy for reliable solo clears.</td>
             </tr>
           </tbody>
@@ -628,7 +713,7 @@ export default function TierListPage() {
             </tr>
             <tr>
               <td>B</td>
-              <td>Raider, Recluse, Revenant</td>
+              <td>Raider, Recluse, Revenant, Undertaker, Scholar</td>
               <td>All viable in organized play but outclassed by A/S picks.</td>
             </tr>
           </tbody>
@@ -656,7 +741,7 @@ export default function TierListPage() {
             </tr>
             <tr>
               <td>B</td>
-              <td>Guardian, Raider, Recluse, Revenant</td>
+              <td>Guardian, Raider, Recluse, Revenant, Undertaker, Scholar</td>
               <td>Speedruns prioritize damage over survivability.</td>
             </tr>
           </tbody>
@@ -766,6 +851,12 @@ export default function TierListPage() {
           </li>
           <li>
             <strong>Want to summon an army?</strong> &rarr; Revenant
+          </li>
+          <li>
+            <strong>Want to live dangerously?</strong> &rarr; Undertaker
+          </li>
+          <li>
+            <strong>Want flexibility and support?</strong> &rarr; Scholar
           </li>
         </ul>
 

@@ -58,8 +58,8 @@ export default function BeginnerGuidePage() {
 
         {/* ── Section 2: Video ── */}
         <YouTubeEmbed
-          videoId="FjsC-sOTTgM"
-          title="Elden Ring Nightreign For Dummies — Everything You Need to Know"
+          videoId="XxUk0H31kiE"
+          title="Ultimate Starter Guide — Everything You Need to Know About Elden Ring Nightreign"
         />
 
         {/* ── Section 3: The 3-Day Cycle ── */}
@@ -98,8 +98,8 @@ export default function BeginnerGuidePage() {
         {/* ── Section 4: Choosing Your First Nightfarer ── */}
         <h2>Choosing Your First Nightfarer</h2>
         <p>
-          Nightreign launches with 8 base-game Nightfarers plus 2 additional
-          characters available through DLC. Each Nightfarer has a unique
+          Nightreign launches with 10 Nightfarers, including 2 DLC characters
+          (Undertaker and Scholar). Each Nightfarer has a unique
           playstyle, passive ability, and Ultimate Art. For your first few runs,
           we recommend one of these three beginner-friendly picks:
         </p>
@@ -178,6 +178,18 @@ export default function BeginnerGuidePage() {
               <td>Hard</td>
               <td>Pet builds</td>
             </tr>
+            <tr>
+              <td>Undertaker</td>
+              <td>Risk DPS</td>
+              <td>Hard</td>
+              <td>Risk-reward play</td>
+            </tr>
+            <tr>
+              <td>Scholar</td>
+              <td>Hybrid Support</td>
+              <td>Medium</td>
+              <td>Flexible play</td>
+            </tr>
           </tbody>
         </table>
 
@@ -231,6 +243,17 @@ export default function BeginnerGuidePage() {
           moments that matter most.
         </p>
 
+        <h3>Weapon Passives</h3>
+        <p>
+          One of Nightreign&apos;s most important hidden mechanics:{" "}
+          <strong>all weapon passive effects apply globally</strong>, even from
+          weapons you&apos;re not actively wielding. If you pick up a weapon
+          with &ldquo;+5% damage on kill&rdquo; and slot it in your inventory
+          without equipping it, you still get the bonus. This means you should
+          pick up every weapon you find, regardless of whether you plan to
+          use it.
+        </p>
+
         {/* ── Section 6: 5 Essential Tips ── */}
         <h2>5 Essential Tips for Your First Run</h2>
 
@@ -270,6 +293,13 @@ export default function BeginnerGuidePage() {
           forgiving environment.
         </TipBox>
 
+        <TipBox type="tip" title="Pick Up Every Weapon">
+          Even weapons you never plan to equip provide passive stat bonuses
+          from your inventory. A weapon with &ldquo;+HP on kill&rdquo; or
+          &ldquo;+stamina recovery&rdquo; helps you just by existing in your
+          gear slots. Always grab every weapon drop.
+        </TipBox>
+
         {/* ── Section 7: Common Mistakes ── */}
         <h2>Common Mistakes</h2>
 
@@ -295,9 +325,11 @@ export default function BeginnerGuidePage() {
             enemies means you will not have it when you need it most.
           </li>
           <li>
-            <strong>Not picking up weapons</strong> &mdash; Even weapons you
-            do not plan to equip provide passive stat bonuses while in your
-            inventory. Always grab them.
+            <strong>Not picking up weapons</strong> &mdash; All weapon passives
+            are global &mdash; they apply from every slot, even weapons
+            you&apos;re not wielding. A weapon with &ldquo;+5% attack
+            power&rdquo; sitting in an inactive slot still boosts your damage.
+            Always grab every weapon drop.
           </li>
           <li>
             <strong>Trying to solo Heolstor on your first attempt</strong>{" "}
@@ -334,6 +366,13 @@ export default function BeginnerGuidePage() {
             </a>{" "}
             &mdash; Detailed strategies for every mini-boss and Nightlord,
             including attack patterns and weaknesses.
+          </li>
+          <li>
+            <a href="/guides/builds/tier-list">
+              <strong>Nightfarer Tier List</strong>
+            </a>{" "}
+            &mdash; Detailed rankings for all 10 characters across solo,
+            co-op, and speedrun modes.
           </li>
         </ul>
       </div>
